@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object</title>
+</head>
+<body>
+    <div id ="clok"></div>
+    <script>
+        let now = new Date ();
+        console.log(now);
+        let monthName = ['jan','feb','mar','apr','may','jun','jul','aug','sept','oct','Nov','dec']
+        console.log(monthName[now.getMonth()]);
+
+        function timerfun(){
+
+            let timer = new Date ();
+            let hour = timer.getHours();
+            let min = timer.getMinutes();
+            let sec = timer.getSeconds();
+
+            document.getElementById('clok').innerHTML = `<h1>${hour} :${min}:${sec}</h1>`;
+        }
+
+        setInterval('timerfun',1000);
+    </script>
+</body>
+</html>

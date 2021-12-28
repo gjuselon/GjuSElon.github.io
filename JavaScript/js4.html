@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // string
+        let firstname = 'Gu June Seng';
+        let lastname ='Elon';
+        console.log (typeof(firstname));
+        console.log (typeof(lastname))
+        console.log (firstname.length);
+        console.log ( lastname.length)
+
+        let fullname = firstname + lastname;
+        console.log (fullname);
+        console.log ("My Name Is " + fullname);
+        console.log (fullname[6]);
+        console.log (fullname.toUpperCase());
+        console.log (fullname.toLowerCase());
+        console.log (fullname.substr(5,3));
+        console.log(fullname.substring(2,6))
+        
+        let hi = 'hello ,world ';
+        console.log (hi .trim ());
+
+        let ser = 'javascript is easy!';
+        let res = ser. search ('is');
+        console.log (res);
+
+        let rep = ' I want to her plz come back to me ';
+        let rep_result = rep.replace('plz', 'please');
+        console.log(rep_result);
+        //backtick sign
+        let string = `i am a zero
+         to pro
+          student `;
+        console.log (typeof(string));
+        console.log(string);
+        console.log ('My Name is ${fullname}')
+
+        console.log ('hello \n JS');
+        console.log ('hello \t Javascript');
+        console.log ('I\'m a programmer');
+        console.log ('I am "a" programmer');
+    </script>
+</body>
+</html>

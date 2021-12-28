@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Result</title>
+</head>
+
+<body>
+    <h1>Exam Result</h1>
+    <form  name ="myform">
+        <label for="c">Turbo C</label>
+        <input type="number" name="c" id="c" placeholder="Enter Turbo C Mark" required>
+        <br><br>
+        <label for="jv">Java</label>
+        <input type=" number" name="jv" id="jv" placeholder="Enter Java Mark" required>
+        <br><br>
+        <label for ="js">JavaScript</label>
+        <input type="number" name="js" id="js" placeholder="Enter JavaScript Mark" required>
+        <br><br>
+        <button type="button" onclick="result()">Result</button>
+    </form>
+
+    <script>
+        function result (){
+
+            let c = document.myform.c.value;
+            console.log(c);
+            let jv = document.myform.jv.value;
+            console.log(jv);
+            let js = document.myform.js.value;
+            console.log(js);
+        
+        if ( c >= 81 && jv >= 81 && js >= 81 ){
+            document.write("<h1>This Student is Pass with Distinction!</h1>")
+        }
+         else if(c >= 50 && jv >= 50 && js >= 50 ){
+            document.write("<h1>This Student is Pass!</h1> ")
+        }
+        else{
+            document.write("<h1>This Student is Faill!</h1>")
+        }
+     }
+    </script>
+</body>
+
+</html>
