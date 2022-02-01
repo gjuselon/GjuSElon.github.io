@@ -1,0 +1,344 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: a;
+    src: url(Lobster/Lobster-Regular.ttf);
+}
+/* Navigation bar */
+.navigation{
+    height: 95px;
+    /* background-color: gray; */
+}
+.brand{
+    display: inline-block;
+}
+.daisy{
+    margin-top: 7px;
+    margin-left: 25px;
+}
+.brand-name{
+    margin-top: -60px;
+    margin-left: 80px;
+    color: lightseagreen;
+    font-family: cursive;
+    font-size: 17px;
+    pointer-events: none;
+}
+nav ul{
+    float: right;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;  
+    margin-top: 80px;
+    margin-right: 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    transition: 500ms ease-out;
+}
+/* li a::after{content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: lightseagreen;
+    transition: 500ms ease-in-out;
+}
+li a:hover::after{
+    width: 100%;
+    transition: 500ms ease-in-out;
+} */
+.nav-links li a:hover{
+    color: lightseagreen;
+    /* letter-spacing: 2px; */
+    transition: 500ms ease-out;
+    font-size: 17px;
+}
+/* End navigation */
+.backg{
+    height: 550px;
+    width: 100%;
+}
+.bg-text{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+.head{
+    font-family:a;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.para{
+    font-family:a;
+}
+.shop{
+    background-color: white;
+    border: 1px solid #2173a1;
+    color: #2173a1;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+.shop:hover{
+    background-color: #2173a1;
+    color: white;
+    transition: 300ms ease;
+}
+/* Product */
+
+.header{
+    text-align: center;
+}
+.hrbar{
+    width: 100px;
+    height: 3px;
+    background-color: #2173a1;
+    margin: auto;
+    border-radius: 3px;
+}
+.product{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 40px;
+    text-align: center;
+    grid-gap: 65px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.proimg{
+    border-radius: 7px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgb(0,0,0,.20);
+}
+.red{
+    color: red;
+}
+/* ABOUT */
+.about{
+    background-image: url(../images/rose.jpg);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+.about div{
+    padding: 50px;
+}
+.did{
+    width: 40px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pack{
+    margin-top: 50px;
+}
+.howto{
+    margin-left: 40px;
+}
+.packimg{
+    margin-top: 30px;
+    margin-left: 40px;
+    float: left;
+}
+.firsttext{
+    margin-top: -35px;
+    margin-left: 580px;
+    padding: 50px;
+}
+.title{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.ptag{
+    padding-top: 5px;
+    word-spacing: 5px;
+    line-height: 20px;
+    text-align: justify;
+}
+.clear{
+    clear:both
+}
+.support{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 80px;
+    background-color: #e2e7e7;
+    padding: 30px 0px 30px 30px;
+}
+.support-icon p{
+    display: inline-block;
+    margin-left: 30px;
+}
+.footer{
+    background-color: #212529;
+    height: 230px;
+}
+.nav{
+    text-decoration: none;
+    color: gray;
+    display: inline-block;
+    font-weight: bold;
+    margin: 50px 20px 0px;
+}
+.designed{
+    color:gray;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.icon{
+    color:gray;
+    display: inline-block;
+    margin: 20px 10px 0px;
+}
+.ar{
+    display: grid;
+    grid-template-columns:5% 80% 5% 5% 5%;
+    margin-top: 20px;
+    background-color: #8a89a3;
+    padding: 10px 5px 10px 5px;
+}
+.tw{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    padding: 10px 0px 2px 0px;
+
+}
+.min{
+    width: 100px;
+    height: 2px;
+    background-color: #5d8399;
+    margin-left:270px ;
+    margin-bottom: 30px;
+     
+}
+.jb{
+   color :#5d8399;
+   
+}
+.details{
+    border-radius: 7px;
+    width: 40%;
+    box-shadow: 0 10px 20px rgb(0,0,0,.20);
+}
+
+.detpart{
+    display: grid;
+    grid-template-columns: auto auto ;
+    margin-top: 10px;
+    margin: 0 auto;
+    grid-gap: 65px;
+    margin-left: 190px;
+    margin-right: 140px;
+    font-weight: bold;
+    box-shadow: wheat;
+}
+.borchan{
+    background-color: rgb(78, 73, 73);
+    border-radius: 5px;
+    border-width:5px ;
+    color: #e5eaec;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+.sbc{
+    background-color: gray;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    border-radius: 2px;
+}
+.bs{
+    color: blue;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.bss{
+    padding-bottom: 5px;
+    padding-left: 30px;
+    font-size: 20px;
+    color: rgb(136, 136, 153);
+}
+.bssbg{
+    padding-left: 30px;
+    margin-top: 2px;
+}
+.abnv{
+    background-image: url(../images/rose.jpg);
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 15px;
+}
+.abnv2{
+    border-radius: 15px;
+    background-color: rgb(62, 133, 133);
+    width: fit-content;
+    color:white;
+}
+.abs{
+    color: white;
+    background-color: gray;
+    text-align: center;
+    margin-top: 5px;
+    padding:10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.int{
+    text-align: center;
+    color: brown;
+}
+.int2{
+    margin: 0 auto;
+    color:rebeccapurple;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.img1{
+    margin-left: 400px;
+    box-shadow: rgb(32, 32, 28);
+    border-radius: 40px;
+    border: violet;
+}
+.con1{
+    height: 4cm;
+    width: 35.5cm;
+    margin-bottom: 10px;
+}
+.con2{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.con3{
+    margin-left: 10px;
+}
+.map1{
+    display:float;
+    float:left;
+    margin-right:50px;
+    float:clear;
+}
+.map2{
+    border-radius:15px;
+    margin-left:3cm;
+    margin-top:40px;
+}
