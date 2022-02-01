@@ -1,0 +1,52 @@
+Assignment-1
+
+CREATE DATABASE tb_asg1;
+
+CREATE TABLE employee
+(
+    EmpNo INT,
+    Name VARCHAR(10),
+    Birthday DATE,
+    Salary DECIMAL(10,2)
+    
+);
+
+DESC employee;
+
+-- tablestructure ans
+
+Field	Type	Null	Key	Default	Extra
+EmpNo	int	YES		NULL	
+Name	varchar(10)	YES		NULL	
+Birthday	date	YES		NULL	
+Salary	decimal(10,2)	YES		NULL	
+
+
+Assignment-2
+
+CREATE TABLE SALEPEOPLE
+(
+    Snum INT,
+    Sname VARCHAR(50),
+    City VARCHAR(50),
+    Comm DECIMAL(3,2)
+);
+
+CREATE TABLE CUSTOMERS
+(
+    Cnum INT,
+    Cname VARCHAR(50),
+    City VARCHAR(50),
+    Rating INT,
+    Snum INT
+);
+
+CREATE TABLE ORDERS
+(
+    Onum INT,
+    Amt DECIMAL(7,2),
+    Odate DATE,
+    Cnum INT,
+    Snum INT
+);
+
